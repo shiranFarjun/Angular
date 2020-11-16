@@ -1,0 +1,32 @@
+<h1>login page</h1>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="firstName">
+      First Name:
+    </label>
+    <input id="name" type="text" formControlName="firstName">
+  </div>
+
+  <div>
+    <label for="lastName">
+      Last Name:
+    </label>
+    <input id="name" type="text" formControlName="lastName">
+  </div>
+  <div>
+    <label for="hobby">
+      Hobby:
+    </label>
+    <input id="name" type="text" formControlName="hobby">
+  </div>
+
+  <button class="button" type="submit">submit</button>
+
+</form>
+<!-- 
+<button  #anchor (click)="onToggle()" class="k-button">{{toggleText}} Popup</button>
+      <kendo-popup [anchor]="anchor" *ngIf="show">
+        <div class="content">
+          Popup content.
+        </div>
+      </kendo-popup> -->

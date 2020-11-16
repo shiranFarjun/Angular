@@ -1,0 +1,22 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class UserService {
+
+    items = [];
+
+    add(user) {
+      this.items.push(user);
+    }
+  
+    getUser() {
+      return this.items;
+    }
+  
+    clear() {
+      this.items = [];
+      return this.items;
+    }
+  }

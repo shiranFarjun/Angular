@@ -1,0 +1,12 @@
+<!-- <p>view-user works!</p> -->
+<h3>Users:</h3>
+<ul class="view-user">
+  <li *ngFor="let item of items" (click)="onSelect(user)">
+    <span>{{ item.firstName }}</span>
+    <span>{{ item.lastName}}</span>
+    <span>{{ item.hobby}}</span>
+  </li>
+</ul>
+
+
+
