@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
+import { ngxCsv } from 'ngx-csv/ngx-csv';
 
 @Component({
   selector: 'app-view-user',
@@ -11,18 +12,15 @@ export class ViewUserComponent implements OnInit {
   items;
 
   constructor(private userService: UserService) {
-
   }
 
   ngOnInit(): void {
-    console.log('in view');//this.userService.getUser()
+    console.log('in view');
     this.items = this.userService.getUser();
     console.log(this.items);
-
   }
-
-  onSelect(user): void {
-    console.log('on click select',user);
+  
+  results() {
+    new ngxCsv(this.items, 'My Report');
   }
-
 }

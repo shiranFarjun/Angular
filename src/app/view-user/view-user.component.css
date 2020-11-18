@@ -1,3 +1,17 @@
-.view-user ul{
+.btn{
+  margin:2rem;
+}
+thead th{
+  border: 1px solid black;
 
+}
+th, tbody td{ 
+  /* margin: 0 0 0 0; */
+  padding: 9px 9px 9px 9px;
+  color:rgb(44, 182, 124);
+
+} 
+
+tbody,tr{ 
+  border: 1px solid black;
 }

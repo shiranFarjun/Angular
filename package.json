@@ -25,6 +25,9 @@
     "@progress/kendo-angular-common": "^1.0.0",
     "@progress/kendo-angular-popup": "^3.0.7",
     "@progress/kendo-theme-default": "latest",
+    "file-saver": "^1.3.2",
+    "ngx-csv": "^0.3.2",
+    "ngx-csv-parser": "0.0.6",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
